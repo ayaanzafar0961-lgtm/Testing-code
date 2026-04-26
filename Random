@@ -1,0 +1,19 @@
+import random
+import time
+
+# List of characters to "fall"
+chars = "0123456789ABCDEF"
+
+print("SYSTEM INITIALIZING...")
+time.sleep(1) # Adds drama (Aura +20)
+
+while True:
+    # Creates a line of 10 random characters with spaces
+    line = ""
+    for i in range(10):
+        line += random.choice(chars) + "  "
+    
+    print(line)
+    
+    # Slows it down just a bit so it looks readable
+    time.sleep(0.05)
